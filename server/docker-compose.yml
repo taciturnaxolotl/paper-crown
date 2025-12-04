@@ -1,4 +1,4 @@
-version: '3.8'
+version: "3.8"
 
 services:
   minecraft:
@@ -12,7 +12,7 @@ services:
       VERSION: "1.20.4"
       ONLINE_MODE: "FALSE"
       ALLOW_FLIGHT: "TRUE"
-      MOTD: "Offline Minecraft Server"
+      MOTD: "where we do haxcy things"
       DIFFICULTY: "easy"
       MAX_PLAYERS: 20
       VIEW_DISTANCE: 10
