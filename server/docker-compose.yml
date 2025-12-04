@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  minecraft:
+    image: itzg/minecraft-server:latest
+    container_name: minecraft-offline
+    ports:
+      - "25566:25565"
+    environment:
+      EULA: "TRUE"
+      TYPE: "PAPER"
+      VERSION: "1.20.4"
+      ONLINE_MODE: "FALSE"
+      ALLOW_FLIGHT: "TRUE"
+      MOTD: "Offline Minecraft Server"
+      DIFFICULTY: "easy"
+      MAX_PLAYERS: 20
+      VIEW_DISTANCE: 10
+      MEMORY: "2G"
+      ENABLE_COMMAND_BLOCK: "TRUE"
+      SPAWN_PROTECTION: 0
+    volumes:
+      - ./data:/data
+    restart: unless-stopped
+    stdin_open: true
+    tty: true

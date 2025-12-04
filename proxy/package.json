@@ -1,0 +1,11 @@
+{
+  "name": "minecraft-proxy",
+  "version": "1.0.0",
+  "type": "module",
+  "dependencies": {
+    "minecraft-protocol": "^1.47.0"
+  },
+  "scripts": {
+    "start": "bun run index.ts"
+  }
+}
